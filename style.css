@@ -4,10 +4,13 @@
 }
 
 canvas {
-  background: #eee;
+  background: url("https://i.pinimg.com/originals/bf/2d/c0/bf2dc0959feb390025fad81613678d70.jpg");
+  background-size: cover;
   display: block;
   margin: auto;
   width: 550px;
   height: 620px;
   margin-top: 60px;
+  border-radius: 8px;
+  box-shadow: 8px -6px 9px black inset;
 }
