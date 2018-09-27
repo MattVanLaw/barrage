@@ -86,3 +86,37 @@ canvas {
     color: #0f380f;
     font-size: 33px;
 }
+
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 102px;
+  margin-top: 17px;
+}
+
+.game-controls .fa-handshake {
+  font-size: 46px;
+  text-shadow: 1px 1px black;
+  background: red;
+  border-radius: 100%;
+  padding: 10px;
+  color: grey;
+  box-shadow: 0.3px 0.1px 0px 1px black;
+  transform: scale(0.8, 1);
+}
+.fa-github {
+  margin-right: 65px;
+  margin-top: 8px;
+}
+
+.fa-github:before {
+  font-size: 46px;
+  text-shadow: 1px 1px black;
+  background: red;
+  color: grey;
+  border-radius: 100%;
+  box-shadow: 0.3px 0.1px 0px 1px black;
+  padding: 10px;
+  margin-top: 8px;
+}

@@ -17,7 +17,7 @@ Users will be able to...
 
 ## Wireframe
 
-![Wireframe for this project](img/wireframe.png)
+![Wireframe for this project](assets/wireframe.png)
 
 ## Technologies
 * `JavaScript` for game logic
