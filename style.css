@@ -67,7 +67,22 @@ canvas {
   font-size: 40px;
   color: #0f380f;
 }
+
 .start-menu span {
   display: block;
   font-size: 20px;
+}
+
+.bottom-specs {
+  position: absolute;
+  right: 20%;
+  top: 75%;
+  color: #0f380f;
+}
+.score {
+  position: absolute;
+    top: 18%;
+    left: 44%;
+    color: #0f380f;
+    font-size: 33px;
 }
