@@ -6,16 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Wallpoet" rel="stylesheet">
   <script src="https://rawgit.com/MattVanLaw/WisDOM/master/lib/wisDOM.js"></script>
   <title>Barrage</title>
 </head>
 
 <body>
-  <canvas id="myCanvas"></canvas>
-  <script src="lib/barrage.js"></script>
-  <div class="health"></div>
-  <div class="score"></div>
-  <div class="message"></div>
+  <div class="game-container">
+    <div class="title">Barrage</div>
+    <canvas id="myCanvas"></canvas>
+    <script src="lib/barrage.js"></script>
+    <div class="play-info">
+      <div class="health"></div>
+      <div class="score"></div>
+      <div class="message"></div>
+    </div>
+  </div>
 </body>
 
 </html>
