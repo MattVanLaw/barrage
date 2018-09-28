@@ -80,11 +80,14 @@ canvas {
   color: #0f380f;
 }
 .score {
+  color: #0f380f;
+  font-size: 33px;
   position: absolute;
-    top: 18%;
-    left: 44%;
-    color: #0f380f;
-    font-size: 33px;
+  top: 19%;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .game-controls {
