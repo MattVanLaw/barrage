@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Wallpoet" rel="stylesheet">
   <script src="https://rawgit.com/MattVanLaw/WisDOM/master/lib/wisDOM.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+  <script>
+    
+    const config = {
+      apiKey: "AIzaSyCBOhYTtNps-O2MdiQFdOuqGVIN7jJpomw",
+      authDomain: "barrage-6af91.firebaseapp.com",
+      databaseURL: "https://barrage-6af91.firebaseio.com",
+      projectId: "barrage-6af91",
+      storageBucket: "barrage-6af91.appspot.com",
+      messagingSenderId: "646814096458"
+    };
+    firebase.initializeApp(config);
+  </script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <title>Barrage</title>
@@ -29,9 +43,13 @@
     <div class="start-menu">Start<br/><span>Click or Enter</span></div>
     <div class="game-controls">
       <a target="_blank" href="https://mattvanlaw.github.io/"><i class="far fa-handshake"></i></a>
-      <a target="_blank" href="https://github.com/MattVanLaw/barrage"><i class="fab fa-github"></i></a>
+      <div class="B">B</div>
     </div>
   </div>
+  <form class="hidden">
+    <input id="name" type="text" value="">
+    <button>Blast</button>
+  </form>
 </body>
 
 </html>
