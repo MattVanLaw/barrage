@@ -23,11 +23,37 @@
       messagingSenderId: "646814096458"
     };
     firebase.initializeApp(config);
+    const query = firebase.database().ref().child('scores/')
+      .orderByChild("score").limitToLast(10);
+
+      let num = 10;
+    query.on('child_added', (snapshot) => {
+      childScore = snapshot.val();
+      let scoreBoard = document.getElementById("score-board");
+      scoreBoard.innerHTML += `<div>${num} ${childScore.name.toUpperCase()} ${childScore.score}</div>`;
+      num--;
+      if (num === 0) scoreBoard.innerHTML += "<h2>High Scores</h2>"
+    });
   </script>
   <title>Barrage</title>
 </head>
 
 <body>
+  <div class="info">
+    <h1>Barrage</h1>
+    <div>It's coming at you!</div>
+    <div class="personal">
+      <small><p><em>By Matt Van Dyke</em></p></small>
+      <small><a target="_blank" href="https://mattvanlaw.github.io/">Website</a> |
+      <a target="_blank" href="https://github.com/MattVanLaw">Github</a></small>
+    </div>
+    <h2>Rules</h2>
+    <ol class="rules">
+      <li>Kill enemies from as high up on the screen as possible for the most points!</li>
+      <li>When you let enemies live, you lose points</li>
+      <li>Click enter to start, pause, and replay!</li>
+    </ol>
+  </div>
   <div class="game-container">
     <div class="title">Barrage</div>
     <canvas id="myCanvas"></canvas>
@@ -42,6 +68,11 @@
     </div>
   </div>
   <a target="_blank" class="B" href="https://github.com/MattVanLaw/barrage"><i class="fab fa-github"></i></a>
+  <div class="d-pad">
+    <div class="vert"></div>
+    <div class="hor"></div>
+  </div>
+  <div id="score-board"></div>
   <form class="hidden">
     <input id="name" type="text" value="">
     <button>Blast</button>

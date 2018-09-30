@@ -9,6 +9,15 @@ body {
   background: #122a22;
 }
 
+a {
+  text-decoration: none;
+}
+
+.personal p,
+.personal a {
+  padding: 5px 0px;
+}
+
 canvas {
   /* background: url(https://media0.giphy.com/media/xUOwFYqBf1hmlmgni8/giphy.gif?cid=3640f60…); */
   /* background-size: cover; */
@@ -48,7 +57,6 @@ canvas {
   left: 76px;
   text-align: center;
   font-size: 3em;
-  /* font-family: 'Wallpoet', cursive; */
   color: #0f380f;
 }
 
@@ -81,6 +89,7 @@ canvas {
   font-size: 18px;
   color: #0f380f;
 }
+
 .score {
   color: #0f380f;
   font-size: 33px;
@@ -90,6 +99,28 @@ canvas {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+#score-board {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  position: absolute;
+  padding: 10px;
+  border-radius: 14px;
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  top: -197px;
+  left: 943px;
+  right: 0px;
+  bottom: 0;
+  background: green;
+  box-shadow: 3px 3px 5px 3px black;
+}
+
+#score-board div {
+  margin: 10px 0px;
 }
 
 .game-controls {
@@ -123,21 +154,25 @@ canvas {
   box-shadow: 0.3px 0.1px 0px 1px #850202;
   padding: 6px 3px;
   width: 46px;
+  height: 41px;
   position: absolute;
   text-align: center;
   right: 0;
   left: 256px;
-  top: 724px;
+  top: 654px;
+  bottom: 0px;
   margin: auto;
 }
 
 #name {
   padding: 9px 4px;
   position: absolute;
-  top: 456px;
+  top: 0px;
   right: 0;
   left: 0;
+  bottom: 0;
   margin: auto;
+  height: 9px;
   width: 200px;
   border: 1px solid #0f380f;
   background: #CADC9F;
@@ -156,9 +191,88 @@ button {
   color: #CADC9F;
   cursor: pointer;
   position: absolute;
-  top: 456px;
+  top: 0;
   right: 0;
   left: 138px;
+  bottom: 0;
   margin: auto;
   width: 70px;
+  height: 28px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 40px 20px 0px 20px;
+  padding: 18px;
+  background: red;
+  align-items: center;
+  border-radius: 14px;
+  box-shadow: 3px 3px 5px 3px black;
+}
+
+.info h1 {
+  font-family: 'Wallpoet', cursive;
+  font-size: 65px;
+  color: #ffd100;
+}
+
+.info div {
+  margin-top: 4px;
+  color: #535353;
+}
+
+.info h2 {
+  margin-top: 30px;
+}
+
+.rules {
+  margin-top: 30px;
+  margin-left: 68px;
+  list-style: lower-alpha;
+}
+
+.rules li {
+  margin-bottom: 12px;
+}
+
+.d-pad {
+  height: 99px;
+  width: 100px;
+  position: absolute;
+  margin: auto;
+  right: 312px;
+  top: 675px;
+  left: 0px;
+  bottom: 44px;
+}
+
+.d-pad div {
+  background: grey;
+  height: 8px;
+  width: 80%;
+}
+
+.d-pad .vert {
+  transform: rotate(90deg);
+  height: 30px;
+  width: 79px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 39px;
+  right: 0;
+  left: 0;
+}
+
+.d-pad .hor {
+  height: 30px;
+  width: 79px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0px;
+  left: 0;
+  bottom: 39px;
 }
