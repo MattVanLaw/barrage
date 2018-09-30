@@ -32,7 +32,6 @@
       let scoreBoard = document.getElementById("score-board");
       scoreBoard.innerHTML += `<div>${num} ${childScore.name.toUpperCase()} ${childScore.score}</div>`;
       num--;
-      if (num === 0) scoreBoard.innerHTML += "<h2>High Scores</h2>"
     });
   </script>
   <title>Barrage</title>
@@ -72,7 +71,10 @@
     <div class="vert"></div>
     <div class="hor"></div>
   </div>
-  <div id="score-board"></div>
+  <div class="score-board-wrap">
+    <h2>High Scores</h2>
+    <div id="score-board"></div>
+  </div>
   <form class="hidden">
     <input id="name" type="text" value="">
     <button>Blast</button>

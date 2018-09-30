@@ -101,10 +101,7 @@ canvas {
   right: 0;
 }
 
-#score-board {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
+.score-board-wrap {
   position: absolute;
   padding: 10px;
   border-radius: 14px;
@@ -117,6 +114,12 @@ canvas {
   bottom: 0;
   background: green;
   box-shadow: 3px 3px 5px 3px black;
+}
+
+#score-board {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
 }
 
 #score-board div {
