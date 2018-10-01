@@ -11,6 +11,15 @@ body {
 
 a {
   text-decoration: none;
+  color: #ff4646;
+}
+
+a:visited {
+  color: #ff4646;
+}
+
+a:hover {
+  color: #ff4646d2;
 }
 
 .personal p,
@@ -108,9 +117,12 @@ canvas {
   margin: auto;
   width: 300px;
   height: 400px;
-  top: -197px;
+  top: 0px;
   left: 943px;
   right: 0px;
+  margin-right: 2%;
+  margin-top: 46px;
+  z-index: -2;
   bottom: 0;
   background: #0de10d;
   box-shadow: 3px 3px 5px 3px black;
@@ -165,6 +177,10 @@ canvas {
   top: 654px;
   bottom: 0px;
   margin: auto;
+}
+
+.B:visited {
+  color: grey;
 }
 
 #name {
@@ -223,7 +239,7 @@ button {
 
 .info div {
   margin-top: 4px;
-  color: #535353;
+  color: #f97531;
 }
 
 .info h2 {
