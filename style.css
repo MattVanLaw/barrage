@@ -29,8 +29,9 @@ a:hover {
 
 canvas {
   /* background: url(https://media0.giphy.com/media/xUOwFYqBf1hmlmgni8/giphy.gif?cid=3640f60…); */
-  /* background-size: cover; */
-  background: #CADC9F;
+  background-size: cover;
+  /* background: #CADC9F; */
+  background: url('./assets/sky-green.png');
   display: block;
   margin: auto;
   margin-top: 19px;
