@@ -106,13 +106,13 @@ canvas {
 
 .score {
   color: #0f380f;
-  font-size: 33px;
+  font-size: 17px;
   position: absolute;
-  top: 19%;
+  top: 9%;
   text-align: center;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: -294px;
 }
 
 .score-board-wrap {
